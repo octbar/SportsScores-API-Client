@@ -1,24 +1,37 @@
 ﻿@model ScoresUI.ViewModels.SoccerScoresViewModel
 
 <title>@Model.PageTitle</title>
-<div></div>
-<h5>Soccer Competitions</h5>
+
+<h3 class="promo-title text-center">Soccer Competitions</h3>
+<h2 class="promo-description text-center">Access to data of these leagues & cups.</h2>
+
 
 <div class="card-deck">
+
     @foreach (var competition in Model.Competitions)
     {
-        <div class="card m-md-0">
-            <div class="card-header text-center">
-                <h2>@competition.name</h2>
-                <h1>@competition.area.name</h1>
-            </div>
-            <img class="card-img-top" src="@competition.emblemUrl" alt="No Picture Found" asp-append-version="true" />
+        
+
+    <div class="card m-3" style="min-width: 18rem; max-width: 30.5%">
+        <div class="card-header text-center">
+            <h3>@competition.name</h3>
+            <h2>@competition.area.name</h2>
+        </div>
+        
+        <img class="card-img-top img-thumbnail" src="@competition.emblemUrl" asp-append-version="true" />
+        <div class="brand-item-footer helper center">
             <div class="card-footer text-center">
-                <a asp-controller="Soccer" asp-action="matches" asp-route-id="@competition.id" class="btn btn-primary">Latest Matches</a>
+                <a href="#" class="btn-primary m1">Latest Matches</a>
             </div>
         </div>
+    </div>
+
+
     }
 </div>
+
+
+
 
 
 
