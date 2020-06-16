@@ -16,8 +16,4 @@
     <ProjectReference Include="..\SoccerScores.Library\Scores.Library.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="wwwroot\images\soccer\competitions\" />
-  </ItemGroup>
-
 </Project>

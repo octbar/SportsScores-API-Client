@@ -1,4 +1,4 @@
-﻿using Scores.Library.Soccer.Models;
+﻿using Scores.Library.Models.Soccer;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 

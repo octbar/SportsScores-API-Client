@@ -1,5 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
-using Scores.Library.Soccer.Models;
+using Scores.Library.Models.Soccer;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
